@@ -2,6 +2,11 @@ a {
 	color: #5E6472;
 }
 
+mark {
+	background-color: #C7EFCF;
+	padding: 1px;
+}
+
 .embed-container { 
 	position: relative; 
 	padding-bottom: 56.25%; 
