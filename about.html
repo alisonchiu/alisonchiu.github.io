@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+
+<body class="sans-serif">
+<nav class="bg-white fixed w-100 top-0 f6-l f7 fw4 ttu tracked z-max">
+	<div class="fl tl v-mid pa3 pa4-l w-40">
+		<a href="/" class="b link black dim tc">Alison Chiu</a>
+	</div>
+
+	<div class="fl tr v-mid pa3 pa4-l w-60">
+		<a href="/" class="fw4 link black dim tc">Portfolio</a>
+		<a href="about" class="fw4 link black dim tc ml2">About</a>
+	</div>
+</nav>
+
+<main class="fl w-100 pa4">	
+	<div class="fl w-50-l w-100 pt4">
+		<header>
+	        <h1 class="f-headline-l f1 lh-solid black mb2">About</h1>
+	    </header>
+	    <section class="pt2 pb3 f6 lh-copy measure-wide mt0">
+	        <p><b>In June 2017, I graduated from the University of Washington, with a Bachelor's of Science in Human Centered Design &amp; Engineering (HCDE) and concentration in Human-Computer Interaction (HCI).</b>
+	      	<p>I am passionate about all things user-centric and has only made me more of a creative problem solver -- not just looking for ways to solve a problem, but how to make it intuitive and engaging as well. Advocating for users enables me to bring further insights and design compelling products. This validation enables my products become more intuitive, efficient and compelling.</p>
+
+	    	<p>Sometimes, I write things on <a class="link fw6 dim black" href="https://medium.com/@alisonlchiu" target="_blank">Medium</a>. You can also connect with me on <a class="link fw6 dim black" href="https://www.instagram.com/alisonlchiu/" target="_blank">Instagram</a> and <a class="link fw6 dim black" href="https://twitter.com/alisonlchiu" target="_blank">Twitter</a>. Otherwise, speedily snail mail me at: <a class="link fw6 dim black" href="mailto:someone@yoursite.com">alc0407@uw.edu</a>.</p>
+	    	<p>Download my <a class="link fw6 dim black" href="https://drive.google.com/open?id=0B4n_uQS_A0DcQkllZ252Q2hOX00">resume</a> here! </p>
+	    </section>
+	</div>
+	<div class="fl w-50-l w-100 pt6-l">
+		<div class="aspect-ratio aspect-ratio--6x4 v-mid">
+		    <div class="aspect-ratio--object cover" style="background:url(img/other/DSC03508.jpg) center;"></div>
+		</div>
+
+	</div>
+</main>
+
+<footer class="bg-white cf f7 footer w-100">
+  <div class="fl tl-l v-mid pa3 pa4-l tc w-100 w-two-thirds-ns black-30 fw1">© 2017 Alison Chiu. All rights reserved.</div>
+  <div class="fl tr-l v-mid pa3 pa4-l tc w-100 w-third-ns">
+  	<a href="" class="f6 dib ph2 link black dim"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://medium.com/@alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://use.fontawesome.com/0e5c7679f1.js"></script>
+
+<!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+<script type = "text/javascript">
+ $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+</script>
+
+</body>
+</html>

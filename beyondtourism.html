@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="http://npmcdn.com/tachyons-negative-margin@1.0.0/css/tachyons-negative-margin.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+
+<body class="sans-serif">
+<nav class="bg-white fixed w-100 top-0 f6-l f7 fw4 ttu tracked z-max">
+	<div class="fl tl v-mid pa3 pa4-l w-40">
+		<a href="/" class="b link black dim tc">Alison Chiu</a>
+	</div>
+
+	<div class="fl tr v-mid pa3 pa4-l w-60">
+		<a href="/" class="fw4 link black dim tc">Portfolio</a>
+		<a href="about.html" class="fw4 link black dim tc ml2">About</a>
+	</div>
+</nav>
+
+<main class="cf pa3 pa4-m pa5-l mw9 center ">
+	<section class="pt2-l fr w-100 w-80-l pb4-l">
+	    <div>
+		    <p class="f7 pt0-l pt4 ttu fw1">
+		      ux design, user research
+		    </p>
+		    <h1 class="f2 f1-l lh-title mt0">
+		      Beyond Tourism
+		    </h1>
+		    <p class="mb4 mb5-ns">Make a meaningful impact on the communities you visit.</p>
+	    </div>
+		<div class="f7 lh-copy mb4">
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		      	<b class="ttu tracked">Timeline</b><br>
+		        January 2017 - April 2017
+		      </p> 
+		    </div>
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		      	<b class="ttu tracked">Teammates</b><br>
+		        Devin Bell (HCDE), Becky Baron (HCDE), Darren Hou (AMATH), William Du (COM)
+		      </p> 
+		    </div>
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		        <b class="ttu tracked">Role</b><br>
+		        UX Designer &amp; Researcher
+		      </p>
+		    </div>
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		        <b class="ttu tracked">Tools</b><br>
+		        Whiteboarding + Sticky notes, Figma, Invision, LucidChart
+		      </p>
+		    </div>
+		</div>
+	</section>
+
+	<section class="fr w-100 w-80-l pr6-l">
+		<div class="bb bw3 b--black"></div>
+		<div class="f3 center mv4 black">
+	        <h1 class="fw6 f3 pv3">Project Overview</h1>
+	        <p class="lh-copy f6 f5-ns black-90">
+	          This project was done as part of the Pixel Project under the team name "spitball.". Beyond Tourism was proposed by Artefact (a design firm based in Seattle) to produce a clickable prototype for an existing travel company based on project requirements. Our task was to <b>design a tool to help travelers find volunteer opportunities in a new city</b>. The guidelines followed as such:
+	        </p>
+	        <ul class="lh-copy f6 f5-ns black-90">
+	        	<li><b>The tool should allow travelers to search for and filter volunteer experiences at their destination.</b> It might also allow travelers to first discover a volunteer experience they’re interested in, and based on that experience choose their destination (destination is secondary to the experience)</li>
+	        	<li><b>The tool should be a new feature in the application or website for an existing travel company of your choosing.</b> (eg. Kayak, REI Adventures, Expedia, Lonely Planet, Trip Advisor, etc). Be sure to consider how the new tool fits into the existing structure of that company’s online presence.</li>
+	        </ul>
+	        <p class="lh-copy f6 f5-ns black-90">
+	          The final solution integrated volunteer opportunities on the TripAdvisor desktop platform, and was named a close runner up for the Pixel Project design competition by Artefact. 
+	        </p>
+    	</div>
+    	<div class='embed-container'><iframe src='https://www.youtube.com/embed/m-fM0Dzz8lo?rel=0&amp;showinfo=0&mute=1' frameborder='0' allowfullscreen></iframe></div>
+	</section>
+
+	<section class="fr w-100 w-80-l pr6-l">
+		<div class="f3 center mv4 black">
+			<div class="p14 bb bw1 b--black-10"></div>	 
+			<!-- USER RESEARCH-->
+			<div class="lh-copy f6 f5-ns black-90 fl-ns">
+				<h3>User Research</h3>
+				<p>After receiving the project, we attended a workshop lead by Sarah Zuberec on determining problems and solutions. This workshop gave great insight on how to tackle the project requirements and the question at hand. The main questions we sought to answer were:
+					<ul>
+						<li>Which device is best to target for this product</li>
+						<li>What factors influence their travel decisions?</li>
+						<li>What are existing travel sites doing well?</li>
+					</ul>
+				</p>
+				<p>This phase led us to our guiding vision statement and key path scenario, including how volunteering opportunities could be integrated into TripAdvisor's existing information architecture. We wanted the experience to feel natural, and as though it had always been there for new and returning customers. Additionally, one of the key elements we alsowanted to highlight was that the experience was meaningful and not just a 'voluncation' where the experience doesn't actually aid the community long term.</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Survey</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	The survey took priority over user interviews due to time limitation. Becky, William and I developed our survey based on online research, for example: to find what factors motivate users to travel, what sites they are currently using and why. It consisted of 20 questions and received 52 responses.
+				<div class="pt2 pb2">
+					<div class="w-50-l w-50-m w-100 fl"><canvas id="bt_age"></canvas></div>
+					<div class="w-50-l w-50-m w-100 fl"><canvas id="bt_travel"></canvas><br></div>
+					<div class="w-50-l w-50-m w-100 fl"><canvas id="bt_site"></canvas></div>
+					<div class="w-50-l w-50-m w-100 fl"><canvas id="bt_device"></canvas><br></div>
+				</div>
+	        	<p><b>The service we chose to integrate into was TripAdvisor because it catered towards activities.</b> REI Adventures did as well, but the adventures were expensive, arranged through REI and destination seemed primary. With TripAdvisor, we saw room for integration because it dealt with 3rd party organizers and had a number of already established categories. We chose to design for a desktop platform because that was the preferred method of planning trips based on our survey results.</p>  
+	        </div>
+			<div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Affinity Diagram</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	This process helped us think critically about who we were designing for and why. It also gave us a high level approach to how the address the project and user requirements. 
+				<div class="pv1 h-100">
+	        		<img class="w-50-ns fl pb2" src="img/beyondtourism/ad1.jpg">
+	        		<img class="w-50-ns fl pb2" src="img/beyondtourism/ad3.jpg">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Persona</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Our persona, Julia, is based on our survey results and affinity diagram analysis. She is a millennial with a modest budget, and wants to learn more about Vietnam while she is there on vacation.
+	        	<div class="pv1">
+	        		<img class="fl pb2" src="img/beyondtourism/persona.jpg">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Vision Statement</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	<blockquote class="athelas ml0 mt0 pl4 black-90">
+	        		<p class="f5 f4-m f3-l lh-copy measure mt0">TripAdvisor believes in the power of travel, and enabling their customers to unleash the potential in their journeys through a variety of planning tools. As travelers, we have the power to make a difference to the communities we explore. Beyond Tourism will expand the TripAdvisor platform to connect people to volunteer activities worldwide.<p>
+	        	</blockquote>
+	        </div>
+	        <!-- END -->
+
+			<!-- IDEATION -->
+	        <div class="w-100 lh-copy f6 f5-ns black-90 fl-ns">
+	        	<div class="bb bw1 b--black-10 pt3"></div>	 
+				<h3>Ideation</h3>
+				<p>We did not receive too much feedback from the first presentation, so we began ideating a sketching out initial concept of how to integrate into TripAdvisor. During our initial sketches, we made sure that they took the existing information architecture into account. It was interesting working with constraints, and I enjoyed the experience a lot. </p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Sketches</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	For the first step in our design ideation process, we drafted three personas. We based our personas on response results from our survey. Two personas fit the 18-24 range because that was the largest percent of respondents in our survey. Grocery budgets, frequency of cooking, and cooking struggles were also selected based on the most popular responses in that age range with those characteristics. 
+	        	<div class="pv1 w-100">
+	        		<img class="w-50-ns fl pb2" src="img/beyondtourism/sketch1.jpg">
+	        		<img class="w-50-ns fl pb2" src="img/beyondtourism/sketch2.jpg">
+	        	</div>
+	        </div>
+	         <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Site Map</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	For the purposes of this project, we focused on designing the left side experience due to the timeframe available. Additionally, we chose to focus on the 'Search' function because it's the method most users would likely interact with. The diagram was done using LucidChart.
+	        	<div class="pv1">
+	        		<img class="fl pb2" src="img/beyondtourism/ia.png">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Wireframes</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	To narrow the scope of our project, we listed the main cooking problems we identified in our research and ranked the severity of those problems for each persona based on their goals and scenarios. The lowest ranked determined the most important problem. 
+				<div class="pv1">
+	        		<img class="w-third-ns fl pb2" src="img/beyondtourism/wire1.png">
+	        		<img class="w-third-ns fl pb2" src="img/beyondtourism/wire2.png">
+	        		<img class="w-third-ns fl pb2" src="img/beyondtourism/wire3.png">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Feedback</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Following the second round of presentations, we were given the following comments to consider for the next stage. 
+	        	<ul>
+	        		<li>Give users the option to sort their searches by more than One Day/Whole Trip</li>
+	        		<li>Add in a "call to action" - such as Sign Up Now</li>
+	        		<li>Why should users get involved?</li>
+	        		<li>What happens if fields are not populated?</li>
+	        		<li>It would be nice to see a ranking of the organization from an external source</li>
+	        		<li>More specifics about activities</li>
+	        		<li>The point system progress bar was confusing</li>
+	        	</ul>
+	        </div>
+	        <!-- END -->
+
+	        <!-- ITERATION -->
+	        <div class="w-100 lh-copy f6 f5-ns black-90 fl-ns">
+	        	<div class="bb bw1 b--black-10 pt3"></div>	 
+				<h3>Iteration</h3>
+				<p>Becky and I made revisions and designed the High Fidelity versions of our prototype on Figma based on the feedback. Most of our focus went into replicating the TripAdvisor experience, so that the volunteer aspect felt natural to the existing system. For the final designs, I worked on most of the Home page and the Volunteer Organization Results page, with minor contributions to the single organization page.</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Final Prototype</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Due to time constraints and scheduling, we were not able to usability tests. However, we applied patterns and color schemes from TripAdvisor to emulate its existing visual design. Some of the changes included in-depth filter options to sort through volunteer opportunity results, further incetivization through a points program and a vetting process. 
+	        	<p>Below are the final mockups, excluding the volunteer organization page (due to size). A demo can be seen above or <a class="link fw6 dim" href="https://projects.invisionapp.com/share/VKAK8W0G7#/screens/219996747">viewed on InVision!</a></p>
+	        	<div class="pv1">
+	        		<img class="w-third-ns fl pb2" src="img/beyondtourism/final1.png">
+	        		<img class="w-third-ns fl pb2" src="img/beyondtourism/final2.png">
+	        		<img class="w-third-ns fl pb2" src="img/beyondtourism/final3.png">
+	        	</div>
+	        </div>
+	        <!-- END --> 
+    	</div>
+	</section> 
+
+	<section class="fr w-100 w-80-l pr6-l">
+<!-- 		<div class="bb bw3 b--black w-90-l"></div>
+ -->		<div class="f3 center mv4 black">
+			<div class="bb bw1 b--black-10"></div>	        
+	        <h1 class="fw6 f3">Reflection</h1>
+	        <p class="lh-copy f6 f5-ns black-90">
+			Overall, the Pixel Project and Beyond Tourism were an insightful experience. Courses within HCDE usually focus on creativity and have a lot more flexibility (due to a lack of constraints). Integrating into an existing system was an exciting challenge and also some guidance on how to design the interaction. Although we were limited by time, I would like the opportunity to explore through "Award Winning" opportunities. This was one section we were not able to design for, but would provide an interesting understanding of how to attract users to volunteer experiences. 
+	        </p>
+    	</div>
+	</section> 
+</main>
+
+<section class="cf mt5 pv5 bt b--black-05 ph6-l">
+    <h1 class="tc f5 ttu fw6 tracked mb4 avenir">Other Projects</h1>
+    <a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/scrambled.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/chameleon.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/myndful.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/dokidoki.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/fido.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+  </section>
+
+<!-- FOOTER -->
+<footer class="bg-white cf f7 footer w-100">
+  <div class="fl tl-l v-mid pa3 pa4-l tc w-100 w-two-thirds-ns black-30 fw1">© 2017 Alison Chiu. All rights reserved.</div>
+  <div class="fl tr-l v-mid pa3 pa4-l tc w-100 w-third-ns">
+  	<a href="" class="f6 dib ph2 link black dim"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://medium.com/@alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </div>
+</footer>
+<!-- SCRIPTS -->
+<script src="https://use.fontawesome.com/0e5c7679f1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="assets/chartsbt.js"></script>
+
+<!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+<script type = "text/javascript">
+ $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+</script>
+
+</body>
+</html>

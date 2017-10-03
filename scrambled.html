@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="http://npmcdn.com/tachyons-negative-margin@1.0.0/css/tachyons-negative-margin.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+
+<body class="sans-serif">
+<nav class="bg-white fixed w-100 top-0 f6-l f7 fw4 ttu tracked z-max">
+	<div class="fl tl v-mid pa3 pa4-l w-40">
+		<a href="/" class="b link black dim tc">Alison Chiu</a>
+	</div>
+
+	<div class="fl tr v-mid pa3 pa4-l w-60">
+		<a href="/" class="fw4 link black dim tc">Portfolio</a>
+		<a href="about" class="fw4 link black dim tc ml2">About</a>
+	</div>
+</nav>
+
+<main class="cf pa3 pa4-m pa5-l mw9 center ">
+	<section class="pt2-l fr w-100 w-80-l pb4-l">
+	    <div>
+		    <p class="f7 pt0-l pt4 ttu fw1">
+		      ux design, capstone project
+		    </p>
+		    <h1 class="f2 f1-l lh-title mt0">
+		      Scrambled
+		    </h1>
+		    <p class="mb4 mb5-ns">Motivating millennials to cook at home more.</p>
+	    </div>
+		<div class="f7 lh-copy mb4">
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		      	<b class="ttu tracked">Timeline</b><br>
+		        January 2017 - June 2017
+		      </p> 
+		    </div>
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		      	<b class="ttu tracked">Teammates</b><br>
+		        Calob Mejias, Alex Pease, Andy Truong
+		      </p> 
+		    </div>
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		        <b class="ttu tracked">Role</b><br>
+		        UX Designer &amp; Researcher
+		      </p>
+		    </div>
+		    <div class="fl-ns w-50-m w-20-l pr3-m pr4-l">
+		      <p>
+		        <b class="ttu tracked">Tools</b><br>
+		        Whiteboarding + Sticky notes, Figma, Adobe Xd, Invision, LucidChart, Framer
+		      </p>
+		    </div>
+		</div>
+	</section>
+
+	<section class="fr w-100 w-80-l pr6-l">
+		<div class="bb bw3 b--black"></div>
+		<div class="f3 center mv4 black">
+	        <h1 class="fw6 f3 pv3">Project Overview</h1>
+	        <p class="lh-copy f6 f5-ns black-90">
+	          With common interest, our team members want to address and solve a problem with cooking. Background research revealed that <b>many Millennials were cooking less at home and this is becoming a health concern.</b> Although there are a number of benefits from cooking at home, such as saving money and better nutrition, Millennials are opting to do otherwise. We investigated and researched the underlying problem of why Millennials are cooking at home less compared to previous generations, and came across two interesting points: lack of confidence and knowledge.
+	        </p>
+	        <p class="lh-copy f6 f5-ns black-90">
+	          <b>Scrambled is an educational cooking app concept designed to motivate people to cook more through education and social interaction.</b> The hope is that one day, there won’t be a need for a product like this and that users will be able to have the skills to cook whatever they want without having to follow a recipe. Part of cooking is the ability to have fun and be flexible with the ingredients you have on hand, rather than a stressful experience that makes people less willing to cook.
+	        </p>
+    	</div>
+    	<div class='embed-container'><iframe src='https://www.youtube.com/embed/ngGSkJjlhCQ?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe></div>
+	</section>
+
+	<section class="fr w-100 w-80-l pr6-l">
+		<div class="f3 center mv4 black">
+			<div class="p14 bb bw1 b--black-10"></div>	 
+			<!-- USER RESEARCH-->
+			<div class="lh-copy f6 f5-ns black-90 fl-ns">
+				<h3>User Research</h3>
+				<p>The initial user research provided understanding of our target users, and the problems aligned with current cooking solutions. From the survey, interviews, deep hanging out study and comparative analysis, we were able to recognize the need for a more personal cooking experience that focused on personal growth and learning experience, rather than ‘how to cook’ and following step by step instructions.</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Survey</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Over survey received <b>over 200 responses</b>, and most of our respondents were 18-34 years old, spend $1 - $100 a week on groceries, and cook 2 - 3 times per week for less than an hour each time. It was posted to a Reddit forum for beginner cooks. Respondents were most frequently frustrated by the following aspects of cooking: the time and effort it requires, doing dishes, their lack of cooking ability, and grocery shopping. When using a cooking resource, respondents prefered mobile and desktop resources at similar rates, and commonly used Pinterest and Allrecipes as resources.
+				<div class="pt2 pb2">
+					<div class="w-50-l w-50-m w-100 fl pb2"><canvas id="scr_age"></canvas></div>
+					<div class="w-50-l w-50-m w-100 fl"><canvas id="scr_cook"></canvas><br></div>
+				</div>
+	        	<p>This generated the following app design requirements: <b>make cooking fun, fast, and educational. From here, we wanted to create a user-centered cooking app</b>. This means that users input their age, preferences, cooking habits, and receive an educational cooking experience tailored for them. These were the following features we considered:</p>  
+				<ul>
+					<li>Suggested recipes based on favorite cuisine, budget, and cooking level</li>
+					<li>User-inputted grocery list that tracks what you have, don’t have, and need</li>
+					<li>Recipe measurements based on unit preference and serving size</li>
+					<li>Recipe description level based on preference (e.g. simple vs. scientific)</li>
+				</ul>
+	        </div>
+			<div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Interviews</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	After reviewing the responses from the surveys, we were able to see the common issues people had with cooking. To develop a deeper understanding of why people are not cooking as much, we conducted <b>three 30-minute interviews</b> with participants who fit our following demographic requirements: had no professional culinary experience, ages 18-35 years old, are considered within the middle class economic standards, and are residing in the U.S. </p>
+	        	<p>All of our participants noted that they often encountered the issue of not having all the ingredients on a recipe. The availability of ingredients in a person’s inventory is an important factor to consider when making a recipe. They also noted that pictures or videos were helpful for them to make or find recipes. 
+				<p>Our requirements continued to evolve, and we added additional design requirements:</p>
+				<ul>
+					<li>Educate users on substitutable ingredients and ingredient knowledge like which ingredients pair well with others</li>
+					<li>Create a way for users to track their ingredient inventory and suggest recipes based on what they have</li>
+				</ul>
+	        </div>
+			<div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Deep Hanging Out</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Observational research was conducted on-site at Hipcooks, an urban kitchen and cooking school in Seattle. Here, we observed and experienced a 2-hour cooking class on how to make sushi. There were 14 people attending and 1 instructor, Christine. Most of the students were new, although a couple were returning. This class also fit within our target age group of millennials, since many or all of them were under 35.</p>
+	        	<p>All of our participants noted that they often encountered the issue of not having all the ingredients on a recipe. As a result, it was important to consider the availability of ingredients in a person’s inventory. They also noted that pictures or videos were helpful for them to make or find recipes.
+	        	<div class="pv1">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/IMG_0845.JPG">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/IMG_0846.JPG">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/thumb_IMG_0643_1024.jpg">
+	        	</div>
+				<p>While not the traditional, Japanese sushi, it was still a fun experience overall. Students were able to be creative with their food, and it made them more confident. Much of the overall, positive experience was being able to interact with other people and being able to help each other out. This inspired our main interest in social cooking and how we can tackle that problem through design. Although not all the elements could translate well to a digital solution, increasing engagement might also improve participation.</p>
+	        </div>
+	        <!-- END -->
+
+			<!-- IDEATION -->
+	        <div class="w-100 lh-copy f6 f5-ns black-90 fl-ns">
+	        	<div class="bb bw1 b--black-10 pt3"></div>	 
+				<h3>Ideation</h3>
+				<p>Following our user research findings, we created our personas (3) and designed requirement matrixes to determine the main problems and features we needed to consider. These personas gave us a deeper understanding of why users how users might interact with the app and what they would value the most.</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Personas</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	For the first step in our design ideation process, we drafted three personas. We based our personas on response results from our survey. Two personas fit the 18-24 range because that was the largest percent of respondents in our survey. Grocery budgets, frequency of cooking, and cooking struggles were also selected based on the most popular responses in that age range with those characteristics. 
+	        	<div class="pv1 w-100">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/persona 1.png">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/persona 2.png">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/persona 3.png">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>User Requirements</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	To narrow the scope of our project, we listed the main cooking problems we identified in our research and ranked the severity of those problems for each persona based on their goals and scenarios. The lowest ranked determined the most important problem. 
+				<p>Based on the matrix, we realized that cooking knowledge was the most important problem. After identifying the educational theme of our app, all of the features we brainstormed earlier were listed again. Similar to before, we rated whether each persona would not care (X), care (checkmark), or feel neutral (0), about each feature and mapped them to their respective score (-1, 0, 1). Higher totals indicated main features that should be implemented first.</p>
+				<div class="pv1">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/Image uploaded from iOS (1).jpg">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/Image uploaded from iOS (2).jpg">
+	        		<img class="w-third-ns fl pb2" src="img/scrambled/Image uploaded from iOS (3).jpg">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Site Map</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	After identifying the most important features based on our personas, we designed a basic site map which showed the rudimentary flow of our app. 
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Paper Prototype</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Some rough sketches were completed as a group and then finalized later on to prepare for a quick usability test using the paper prototypes. This was done so we could quickly test the concepts and make revisions in an efficient manner. 
+	        	<div class="pv2">
+	        		<img class="fl pb2" src="img/scrambled/lowfi.png">
+	        	</div>
+	        </div>
+	        <!-- END -->
+
+	        <!-- ITERATION -->
+	        <div class="w-100 lh-copy f6 f5-ns black-90 fl-ns">
+	        	<div class="bb bw1 b--black-10 pt3"></div>	 
+				<h3>Iteration</h3>
+				<p>As the understanding of our project and product grew, we moved on to the next stage of iteration and validating our design decisions. After the paper prototype, we conducted guerrilla usability testing for quick feedback. Once our concept became more concrete, we conducted participatory design before moving on to our final prototype.</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Prototype Testing (Paper)</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	During the Capstone class on May 2nd, 2017, four usability test studies were conducted using our paper prototype with four different students in the class. One person facilitated the usability tests and changed the screens and two people took notes and asked questions. 
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Revised Sitemap</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	The sitemap was revised once we gained a better understanding of the user flow and usability test results from the paper prototype.
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Wireframes</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Based on the results of our paper prototype testing, we implemented some design changes. One change was adding in a comment feature on the user page. So now the social feed now features text saying “Bob cooked chicken” with their comment below. It also shows the likes and comments for each post, which makes the information more interesting than before. 
+	        	<div class="pv2">
+	        		<img class="fl pb2" src="img/scrambled/wire.png">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Participatory Design</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	To get a better idea of what our users wanted to see in our final design, we conducted quick participatory design session. We had a potential user look over our wireframes and make some changes to our original ideas. She reviewed the overview of the lessons page and liked the general visual layout but made some minor suggestions such as:
+	        	<ul>
+	        		<li>Attach the start lesson button to the bottom of the page</li>
+	        		<li>Create highlights for when certain features, such as detailed vs. basic view are selected for nutrition information</li>
+	        		<li>Only show nutrition information for people that select health as a priority in the onboarding screens</li>
+	        	</ul>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Prototype Testing (Wireframes)</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	The clickable prototype was created in Marvel, and linked together the wireframes designed in Figma. This was the final, major round of usability testing we conducted and it was mainly done to identify any other feature-related revisions. 
+	        </div>
+	        <!-- END -->
+
+	        <!-- IMPLEMENTATION -->
+	        <div class="w-100 lh-copy f6 f5-ns black-90 fl-ns">
+	        	<div class="bb bw1 b--black-10 pt3"></div>	 
+				<h3>Implementation</h3>
+				<p>Moving towards the final prototype, we finalized the designs in Adobe Xd. I also designed the app logo and during the process, considered how the app goals and purpose could be conveyed through it. The final mockups and logo were featured on the presentation poster (which I designed as well) and other materials.</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>High Fidelity Mockups</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	The high fidelity mockup screens were designed in Adobe Xd, partly because it was easy to integrate interactions within the program. 
+	        	<div class="pv2">
+	        		<img class="fl pb2" src="img/scrambled/hifi.png">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Logo Design</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Our logo is based on an egg, who is ‘evolving’ into a chicken by becoming more advanced in their cooking ability. I wanted our design to encompass the ideas of ‘cooking’ and ‘education’, which is why the egg is wearing a chef’s hat. Additionally, eggs are a versatile ingredient and one that many learn how to cook early on. 
+				<p>The egg is intended to look ‘cartoonish’ to create a more fun and relaxed environment. The goal of our app is to make cooking fun and engaging while also being educational, so having a cute character adds to those aspect by making it less serious. This is furthered by the bright color scheme that is reflective of the app and to give a welcoming feel.</p>
+				<div class="w-50-l pv1">
+	        		<img class="fl pb2" src="img/logos/scrambled.png">
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Final Prototype (Framer)</b>
+	        </div>
+	        <div class="w-80-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Based on the results of our paper prototype testing, we made some design changes that we implemented in our group design sessions, and then into our wireframes. Since some people found the social feed only saying “Bob cooked chicken,” we decided to add in a comment feature on the user page. So now, on the social feed, the text says “Bob cooked chicken” with their comment below. It also shows the likes and comments for each post, which makes the information more interesting than before. The final prototype was done in Framer to give users the most accurate interaction with the app. Although there were still some bugs, the level of interaction was much higher compared to Adobe Xd because there was greater flexibility and control over the elements. 
+	        	<p><a class="link fw6 dim" href="https://framer.cloud/esejX" target="_blank">The final prototype can be viewed here!</a>
+	        </div>
+	        <!-- END -->
+    	</div>
+	</section> 
+
+	<section class="fr w-100 w-80-l pr6-l">
+<!-- 		<div class="bb bw3 b--black w-90-l"></div>
+ -->		<div class="f3 center mv4 black">
+			<div class="bb bw1 b--black-10"></div>	        
+	        <h1 class="fw6 f3">Reflection</h1>
+	        <p class="lh-copy f6 f5-ns black-90">
+			During the Capstone Open House, one of the comments we heard frequently was if we planned on developing this idea further, and that they would download it if given the opportunity. This feedback was insightful because it meant there was a <b>definite need in the community for a product like this, and that potential users understood the purpose and goal of this app</b>.
+	        </p>
+	        <p class="lh-copy f6 f5-ns black-90">
+			With all apps, there is always room for improvement. One of the questions we were asked was: <b>where the recipes will come from and how will they be curated?</b> The current content is being pulled from recipe websites, and then revised to fit the format of our app. This would likely not be possible if we were to release the app, since the recipes came from websites which have their own. Additionally, it would likely be an issue of licensing and ownership rights. 
+	        </p>
+	        <p class="lh-copy f6 f5-ns black-90">
+	        That said, I am proud of what we have accomplished. There were times where we did feel short on time and wish we had begun our initial user research, but we were able to meet all of our milestone dates with some adjustments. For example, we underestimated the time needed to process the user research, design the personas and validate our design decisions, so our schedule was adapted to make sure it could get completed and still meet all our other deadlines. If given more time, I believe we could have further refine our visual design and flesh out the onboarding sequence more and perhaps dedicated testing solely for it. Our demo during Capstone focused primarily on being inside of the app, so there wasn’t much consideration about logging in and finer details for onboarding. 
+	        </p>
+    	</div>
+	</section> 
+</main>
+
+<section class="cf mt5 pv5 bt b--black-05 ph6-l">
+    <h1 class="tc f5 ttu fw6 tracked mb4 avenir">Other Projects</h1>
+    <a href="beyondtourism.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/IDuK8BtH.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/chameleon.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/myndful.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/dokidoki.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+	<a href="scrambled.html" class="fl w-50 w-third-ns border-box overflow-hidden ba bw2 white">
+		<div class="aspect-ratio aspect-ratio--1x1 grow">
+			<div class="aspect-ratio--object cover link bg-center pv5 pv6-l" style="background:url(img/logos/fido.png) center;background-color: #FCCA31">
+		    </div>
+		</div>
+	</a>
+  </section>
+
+<!-- FOOTER -->
+<footer class="bg-white cf f7 footer w-100">
+  <div class="fl tl-l v-mid pa3 pa4-l tc w-100 w-two-thirds-ns black-30 fw1">© 2017 Alison Chiu. All rights reserved.</div>
+  <div class="fl tr-l v-mid pa3 pa4-l tc w-100 w-third-ns">
+  	<a href="" class="f6 dib ph2 link black dim"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://medium.com/@alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </div>
+</footer>
+<!-- SCRIPTS -->
+<script src="https://use.fontawesome.com/0e5c7679f1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="assets/chartsscr.js"></script>
+
+<!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+<script type = "text/javascript">
+ $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+</script>
+
+</body>
+</html>
