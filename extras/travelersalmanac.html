@@ -25,36 +25,36 @@
 	<section class="pt2-l fr w-100 w-80-l pb4-l pr6-l">
 	    <div>
 		    <p class="f7 pt0-l pt4 ttu fw1">
-		      prototyping
+		      web application
 		    </p>
 		    <h1 class="f2 f1-l lh-title mt0">
-		      UX Prototyping
+		      Traveler's Almanac
 		    </h1>
-		    <p class="mb4 mb5-ns">Various methods from laser cutting, to 3D printing and more.</p>
+		    <p class="mb4 mb5-ns">Find out more about your next destination.</p>
 	    </div>
 		<div class="f7 lh-copy mb4">
 		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
 		      <p>
 		      	<b class="ttu tracked">Timeline</b><br>
-		        January 2017 - March 2017
+		        November 2015 - December 2015
 		      </p> 
 		    </div>
 		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
 		      <p>
-		      	<b class="ttu tracked">Teammates</b><br>
-		        n/a
+		      	<b class="ttu tracked">Teammate</b><br>
+		       Khalil Somani
 		      </p> 
 		    </div>
 		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
 		      <p>
 		        <b class="ttu tracked">Role</b><br>
-		        Developement 
+		        Developement &amp; Design
 		      </p>
 		    </div>
 		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
 		      <p>
 		        <b class="ttu tracked">Tools</b><br>
-		        Makerbot, Lasercutter, Rhino, Illustrator, etc. 
+		        Google App Engine, APIs 
 		      </p>
 		    </div>
 		</div>
@@ -65,8 +65,12 @@
 		<div class="f3 center mv4 black">
 	        <h1 class="fw6 f3 pv3">Project Overview</h1>
 	        <p class="lh-copy f6 f5-ns black-90">
-	          This course introduced various types of UX prototyping methods. Below are some of my favorites! If you would like to see more, they can be found on Medium.
+	          Traveler's Almanac's intends to solve the problem of the lack of information when looking for a hotel, especially about the environment around the hotel.  When making travel plans in advance, most of the time, the individual would likely not be aware of the weather conditions, or what the area is like without having done some research beforehand.
+
+			<p class="lh-copy f6 f5-ns black-90">Traveler's Almanac is a web application hosted by Google App Engine and uses API's from rome2rio, wunderground and flickr. <a class="link fw6 dim" href="http://travelersalmanac.appspot.com/" target="_blank">Check it out here!</a></p>
+
     	</div>
+    	<div class='embed-container'><iframe src='https://www.youtube.com/embed/q-fZkKqZcik?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe></div>
 
 	</section>
 
@@ -75,36 +79,17 @@
 			<div class="p14 bb bw1 b--black-10"></div>	 
 			<!-- USER RESEARCH-->
 			<div class="lh-copy f6 f5-ns black-90 fl-ns">
-				<h3>Wearable UIs</h3>
-				<p>The Zoo4U app pairs smart watch and smart phone to make zoo adventures even more exciting for kids! Kids can navigate around the zoo to find their favorite animals or select an adventure that is based around a specific habitat. For example, going on a “Safari Adventure”. Parents can manage their kid’s adventure through their phone, and their kid(s) can explore it through the smartwatch. The smartwatch will provide the adventure and exploratory elements, while the smartphone will present additional information that cannot fit on the watch. <a class="link fw6 dim" href="https://medium.com/@alisonlchiu/wearable-uis-473a3b56e88a" target="_blank">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-				<div class='embed-container'><iframe src='https://www.youtube.com/embed/oa--zOeNejQ?rel=0&amp;showinfo=0&mute=1' frameborder='0' allowfullscreen></iframe></div>
+				<h3>Process</h3>
+				<p>Considering the problem we wanted to solve, we identified the value of the system.  This system would enable people interested in traveling to see important information such as hotel information and forecasting all in one place.  There is also the potential to include images of the location site, making it a quick and easy way for travelers so see where they are going and how they should pack/plan for the trip based on weather conditions.  This would be an alternative to finding the information across a variety of different websites by consolidating it all into one place. 
+				<p>​Initially, we planned on using TripAdvisor and Google Maps, but obtaining the TripAdvisor key was not easily accessible and found Google Maps unnecessary during the coding process.  Ultimately, the API's we chose to use were:</p>
+				<ul>
+					<li><b>rome3rio:</b> to present flight itineraries based on user input</li>
+					<li><b>flickr:</b> to provide images based on tag search results</li>
+					<li><b>wunderground:</b> to present a 10-day forecast based on location</li>
+				</ul>
+				<p>We extracted necessary information from the API's using the JSON format and sorting through a number of nested dictionaries.  After the program was returning the correct information, the web application was formatted using HTML and CSS and hosted it up on Google App Engine.</p>
 			</div>
-	        <!-- END -->
 
-			<!-- USER RESEARCH-->
-			<div class="lh-copy f6 f5-ns black-90 fl-ns pt4-l pt2">
-				<h3>3D Toy Puzzle</h3>
-				<p>Over Winter Break, I watched <i>Fantastic Beasts and Where to Find Them</i> with my sister and fell in love with the cheeky creature who is incredibly attracted to shiny things (to the point where it got him into trouble numerous times throughout the film). One of my favorite scenes in the film was when the niffler had escaped and attempted to hide itself in a jewelry shop. Newt, in search for the niffler, then stumbled across the store front and saw something strange.
-				<p>The Niffler puzzle is cut from chipboard and uses full cuts, etching and rastering. He was outlined in Adobe Illustrator and broken up into 5 pieces.  <a class="link fw6 dim" href="https://medium.com/@alisonlchiu/3d-toy-puzzle-da5f9c64f0ee" target="_blank">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
-				<div class="fl w-50 w-third-ns">
-				    <div class="aspect-ratio aspect-ratio--1x1">
-				      <img style="background-image:url(../img/extras/uxprototyping/niffler1.jpeg);"
-				        class="db bg-center cover aspect-ratio--object" />
-				    </div>
-				</div>
-				<div class="fl w-50 w-third-ns">
-				    <div class="aspect-ratio aspect-ratio--1x1">
-				      <img style="background-image:url(../img/extras/uxprototyping/niffler2.jpeg);"
-				        class="db bg-center cover aspect-ratio--object" />
-				    </div>
-				</div>
-				<div class="fl w-50 w-third-ns">
-				    <div class="aspect-ratio aspect-ratio--1x1">
-				      <img style="background-image:url(../img/extras/uxprototyping/niffler3.jpeg);"
-				        class="db bg-center cover aspect-ratio--object" />
-				    </div>
-				</div>
-			</div>
 	        <!-- END -->
     	</div>
 	</section> 
