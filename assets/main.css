@@ -35,7 +35,7 @@ mark {
 }
 
 .logo_bg {
-/*	background-color: #e0e0e0;
+/*	background-color: #C7EFCF;
 */}
 
 .logo_txt {
@@ -45,9 +45,9 @@ mark {
 }
 
 .logo:hover img {
-	opacity: .5;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+	opacity: .7;
+	-webkit-filter: grayscale(20%);  /*Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
 }
 
 .logo:hover .logo_cover {
