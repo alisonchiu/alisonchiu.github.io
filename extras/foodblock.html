@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Alison Chiu"> 
+  <meta name="description" content="Alison Chiu, Freelance UX Designer and Researcher in Seattle. I design intuitive and compelling digital experiences.">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="http://npmcdn.com/tachyons-negative-margin@1.0.0/css/tachyons-negative-margin.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/main.css">
+
+<body class="sans-serif">
+<nav class="bg-white fixed w-100 top-0 f6-l f7 fw4 ttu tracked z-max">
+	<div class="fl tl v-mid pa3 pa4-l w-40">
+		<a href="/" class="b link black dim tc">Alison Chiu</a>
+	</div>
+
+	<div class="fl tr v-mid pa3 pa4-l w-60">
+		<a href="/" class="fw4 link black dim tc">Portfolio</a>
+		<a href="about.html" class="fw4 link black dim tc ml2">About</a>
+	</div>
+</nav>
+
+<main class="cf pa3 pa4-m pa5-l mw9 center ">
+	<section class="pt2-l fr w-100 w-80-l pb4-l pr6-l">
+	    <div>
+		    <p class="f7 pt0-l pt4 ttu fw1">
+		      physical computing
+		    </p>
+		    <h1 class="f2 f1-l lh-title mt0">
+		      FoodBlock
+		    </h1>
+		    <p class="mb4 mb5-ns">Protect your food from unwanted snackery.</p>
+	    </div>
+		<div class="f7 lh-copy mb4">
+		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
+		      <p>
+		      	<b class="ttu tracked">Timeline</b><br>
+		        May 2017 - June 2017
+		      </p> 
+		    </div>
+		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
+		      <p>
+		      	<b class="ttu tracked">Teammates</b><br>
+		        Kiwon Jeong, Ross Monroe, Hannah Postings, Khalil Somani, Stephanie Yu
+		      </p> 
+		    </div>
+		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
+		      <p>
+		        <b class="ttu tracked">Role</b><br>
+		        Developement 
+		      </p>
+		    </div>
+		    <div class="fl-ns w-50-m w-25-l pr3-m pr4-l">
+		      <p>
+		        <b class="ttu tracked">Tools</b><br>
+		        Arduino 
+		      </p>
+		    </div>
+		</div>
+	</section>
+
+	<section class="fr w-100 w-80-l pr6-l">
+		<div class="bb bw3 b--black"></div>
+		<div class="f3 center mv4 black">
+	        <h1 class="fw6 f3 pv3">Project Overview</h1>
+	        <p class="lh-copy f6 f5-ns black-90">
+	          FoodBlock is the best defense against unwanted snackery! Protect your favorite cookies, candies and other treats from unruly roommates and family members. With FoodBlock, you can monitor your food's safety from afar, and be alerted when its stolen. Your food has never been safer before! 
+
+			<p class="lh-copy f6 f5-ns black-90">Using next level technology, you don't need to be around to know your food is safe. FoodBlock uses wireless communication for a seamless experience, whether you're arming your box or monitoring it's status. It's simple design and bright display will also make it a great installation for any kitchen and home. </p>
+
+			<p class="lh-copy f6 f5-ns black-90">This project was designed Spring 2017 for HCDE 439: Physical Computing</p>
+    	</div>
+    	<div class='embed-container'><iframe src='https://www.youtube.com/embed/8QNnBaHfzPQ?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen></iframe></div>
+
+	</section>
+
+	<section class="fr w-100 w-80-l pr6-l">
+		<div class="f3 center mv4 black">
+			<div class="p14 bb bw1 b--black-10"></div>	 
+			<!-- USER RESEARCH-->
+			<div class="lh-copy f6 f5-ns black-90 fl-ns">
+				<h3>How it Works</h3>
+				<p>FoodBlock consists of a box, remote and comamnd center using wireless communication. The box and remote are laser cut acrylic and use a number of sensors and other components such as: Buttons, LED's, and Pressure plate. My partner, Khalil, and I worked on the box which is able to sense when it is opened, and if there is food inside. 
+				<p>When the box is opened, an LED Strip lights up and a pressure plate on the bottom of the box detects a change in weight to determine whether or not something is present. If the user is putting food into the box, they can also reset the alarms. The box also features an LCD display to show the box’s status and messages from the command center, as well as an XBee to receive and send signals to the command center about the box’s status. ​</p>
+			</div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>System Diagram</b>
+	        </div>
+	        <div class="w-70-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	Incidentally, the final version did not include the Camera because it required a more powerful system than we had access to (due to time constraints). All other components were used.<br>
+	        	<div class="mt2 pv1 w-70-l fl">
+	        		<img class="fl pb2" src="../img/extras/foodblock/fb_sd.jpg">
+	        	</div>
+	        	<div class="w-30-l w-100 fl f7">
+	        		<ol>
+	        			<li>LED Strip</li>
+	        			<li>XBee</li>
+	        			<li>Pressure Plate</li>
+	        			<li><strike>Camera</strike></li>
+	        			<li>Hall Effect Sensor</li>
+	        			<li>LCD Display</li>
+	        			<li>Button</li>
+	        			<li>Speaker</li>
+	        		</ol>
+	        	</div>
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Breadboard Layout</b>
+	        </div>
+	        <div class="w-70-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	<div class="mt2 pv1">
+	        		<img class="fl pb2" src="../img/extras/foodblock/fb_bbl.png">
+	        	</div>
+	        	
+	        </div>
+	        <div class="w-20-l f7 lh-copy mb2 fl-ns ttu tracked">
+	        	<b>Software</b>
+	        </div>
+	        <div class="w-70-l f6 lh-copy mb2 fl-ns pl2-l">
+	        	The box first checks with the remote if it has been disarmed, and if it has been, does nothing and allows the user to add/remove objects without setting off any alarms. If the box is armed, the box begins flashing when opened and adds a beeping element if the object is removed.
+	        	<p>The final software was organized in a modular fashion so that it would be easier to call each of the functions, rather than through a number of 'if' statements. Initially, we approached it logically based on the motions the user would use to open the box, and if it was locked or not. This was revised by making it modular and easier to understand what function was being called when. Additionally, this allowed for greater communication and made it easier for debugging since most of it was a manner of when the functions were being called. </p>
+	        </div>
+	        <!-- END -->
+    	</div>
+	</section> 
+
+	<main class="cf w-100">
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb1.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb2.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1 rotate-180">
+	      <img style="background-image:url(../img/extras/foodblock/fb3.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb4.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb5.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb6.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb7.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	  <div class="fl w-50 w-third-m w-25-ns">
+	    <div class="aspect-ratio aspect-ratio--1x1">
+	      <img style="background-image:url(../img/extras/foodblock/fb8.jpg);"
+	        class="db bg-center cover aspect-ratio--object" />
+	    </div>
+	  </div>
+	</main>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="bg-white cf f7 footer w-100">
+  <div class="fl tl-l v-mid pa3 pa4-l tc w-100 w-two-thirds-ns black-30 fw1">© 2017 Alison Chiu. All rights reserved.</div>
+  <div class="fl tr-l v-mid pa3 pa4-l tc w-100 w-third-ns">
+  	<a href="" class="f6 dib ph2 link black dim"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://medium.com/@alisonlchiu" class="f6 dib ph2 link black dim" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/alisonlchiu/" class="f6 dib ph2 link black dim" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+  </div>
+</footer>
+<!-- SCRIPTS -->
+<script src="https://use.fontawesome.com/0e5c7679f1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="assets/chartsdd.js"></script>
+
+<!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+<script type = "text/javascript">
+ $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+</script>
+
+</body>
+</html>
