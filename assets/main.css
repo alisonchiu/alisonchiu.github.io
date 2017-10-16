@@ -7,6 +7,11 @@ mark {
 	padding: 1px;
 }
 
+.footer {
+	position: absolute;
+	bottom: 0;
+}
+
 .embed-container { 
 	position: relative; 
 	padding-bottom: 56.25%; 
