@@ -32,42 +32,13 @@ video {
 	height: 100%; 
 }
 
-.logo_cover {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-}
-
-.logo_bg {
-/*	background-color: #C7EFCF;
-*/}
-
-.logo_txt {
-	color: black;
-    position: absolute;
-    bottom: 10%;
-}
-
-.logo:hover .logo_txt {
-/*	background: #f7f7f7;
-*/}
-
 .logo:hover img {
 	opacity: .5;
 	-webkit-filter: grayscale(20%);  
     filter: grayscale(20%);
-}
-
-.logo:hover .logo_cover {
-	opacity: 1;
-		-webkit-transition: all .5s ease-in-out;
-	  	-moz-transition: all .5s ease-in-out;
-	  	-o-transition: all .5s ease-in-out;
-	  	transition: all .5s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+	  	-moz-transition: .1s ease-in-out;
+	  	-o-transition: .1s ease-in-out;
+	  	transition: .1s ease-in-out;
 }
 
